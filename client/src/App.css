@@ -1419,3 +1419,15 @@ table.health tr td:first-child + td {
   width: 260px;
   padding-left: 10px;
 }
+
+/*===================
+BLOG
+====================*/
+
+.react-slideshow-container {
+  height: 400px;
+}
+
+.post-title {
+  padding: 10px;
+}

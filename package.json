@@ -21,7 +21,13 @@
     "mongoose": "^5.10.9",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
-    "validator": "^13.1.17"
+    "react-multi-carousel": "^2.5.5",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.2.2",
+    "react-slideshow-image": "^3.4.2",
+    "semantic-ui-react": "^2.0.1",
+    "validator": "^13.1.17",
+    "zoom": "^0.0.2"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",

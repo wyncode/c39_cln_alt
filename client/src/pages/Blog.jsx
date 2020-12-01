@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import 'react-slideshow-image/dist/styles.css';
 import axios from 'axios';
+import BlogSlideshow from '../pages/BlogSlideshow';
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
-
   useEffect(() => {
     axios
       .get('/api/posts')
@@ -17,12 +18,16 @@ const Blog = () => {
 
   return (
     <div>
-      <h6>Blog</h6>
+      <h3>Blog</h3>
+      <section>
+        <BlogSlideshow />
+      </section>
+      <h6>The Latest</h6>
       {posts.map((post) => (
         <li key={post._id}>
-          <h2>{post.title}</h2>
-          <img url={post.image} alt={post.title} />
-          {post.text}
+          <h2 className="post-title">{post.title}</h2>
+          {/* <img url={post.image} alt={post.title} /> */}
+          {/* {post.text} */}
         </li>
       ))}
     </div>
