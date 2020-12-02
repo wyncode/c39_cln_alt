@@ -1,10 +1,10 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
-import '../images/bs_1.jpg';
-import '../images/blog_slide_1.svg';
+import image from '../images/bs_1.jpg';
+import anotherImage from '../images/beeNatural.jpg';
 
 const BlogSlideshow = () => {
-  const images = [{ src: '../images/bs_1.jpg' }, '../images/blog_slide_1.svg'];
+  const images = [image, anotherImage];
   const zoomInProperties = {
     indicators: true,
     scale: 1.4
@@ -13,8 +13,12 @@ const BlogSlideshow = () => {
     <div>
       <Zoom {...zoomInProperties}>
         {images.map((each, index) => (
-          <div key={index} style={{ width: '100%' }}>
-            <img style={{ objectFit: 'cover', width: '100%' }} src={each} />
+          <div
+            key={index}
+            className="images1"
+            style={{ width: '100%', height: '100%' }}
+          >
+            <img style={{ objectFit: 'cover', width: '50%' }} src={each} />
           </div>
         ))}
       </Zoom>

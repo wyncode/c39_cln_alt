@@ -1426,8 +1426,27 @@ BLOG
 
 .react-slideshow-container {
   height: 400px;
+  margin: auto;
 }
-
 .post-title {
-  padding: 10px;
+  margin: auto;
+  justify-content: space-around;
+  padding: 30px;
 }
+.the-latest {
+  margin: auto;
+  justify-content: space-around;
+  padding: 30px;
+}
+.blog-title {
+  margin: auto;
+  height: auto;
+  width: auto;
+  justify-content: space-around;
+  padding: 60px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+/* .images1 {
+ margin: auto;
+} */

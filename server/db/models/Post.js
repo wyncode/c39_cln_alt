@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema(
   {
+    // subtitle: {
+    //   type: String,
+    //   required: true,
+    //   trim: true
+    // },
     title: {
       type: String,
       required: true,
