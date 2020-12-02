@@ -31,14 +31,28 @@ const Blog = () => {
       <section className="the-latest">
         <h6>The Latest</h6>
       </section>
-      {posts.map((post) => (
-        <li key={post._id}>
-          {/* <h3 className="sub-title">{post.subtitle}</h3> */}
-          <h2 className="post-title">{post.title}</h2>
-          <img url={post.image} alt={post.title} />
-          {post.text}
-        </li>
-      ))}
+      <div class="flexbox-container">
+        <div>
+          {posts.map((post) => (
+            <li key={post._id}>
+              {/* <h3 className="sub-title">{post.subtitle}</h3> */}
+              <h2 className="post-title">{post.title}</h2>
+              <img url={post.image} alt={post.title} />
+              {post.text}
+            </li>
+          ))}
+        </div>
+        <div>
+          {posts.map((post) => (
+            <li key={post._id}>
+              {/* <h3 className="sub-title">{post.subtitle}</h3> */}
+              <h2 className="post-title">{post.title}</h2>
+              <img url={post.image} alt={post.title} />
+              {post.text}
+            </li>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
